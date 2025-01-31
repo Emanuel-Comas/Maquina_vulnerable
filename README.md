@@ -13,14 +13,23 @@ Explotacion de vulnerabilidad.
 nmap -p- --open -sS -sC -sV --min-rate=5000 -vvv -n -Pn -oN escaneo 172.17.0.2
 
 -p-: Busqueda de puertos abiertos
+
 --open: Enumera los puertos abiertos
+
 -sS: Es un modo de escaneo rapido
+
 -sC: Que use un conjunto de scripts de reconocimiento
+
 -sV: Que encuentre la version del servicio activo
+
 --min-rate=5000: Hace que el reconocimiento vaya aun mas rapido mandando no menos de 5000 paquetes
+
 -vvv: Muestra en pantalla a medida que encuentre puertos
+
 -n: No hace resolucion DNS 
+
 -Pn: No hace ping
+
 
 -- Tanto puerto 22 como 80 estan abiertos
 ![Puerto 22](image-1.png)
